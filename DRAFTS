@@ -38,3 +38,18 @@ SOCIALACCOUNT_ADAPTER = 'apps.users.adapters.SocialAccountAdapter'
     url(r'^users/', include('apps.users.urls', namespace='users')),
 
 #################################################
+
+#################################################
+django app cookiecutter
+
+https://github.com/wildfish/cookiecutter-django-crud
+https://github.com/pydanny/cookiecutter-djangopackage
+
+
+###
+Pip install python package into a specific directory other than the default install location
+http://stackoverflow.com/questions/17216689/pip-install-python-package-into-a-specific-directory-other-than-the-default-inst
+
+pip install a local git repository
+http://stackoverflow.com/questions/14159482/pip-install-a-local-git-repository
+
