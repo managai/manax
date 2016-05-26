@@ -2,6 +2,16 @@
 All enhancements and patches to Cookiecutter Django will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+##[NEXT]
+### Added
+- Added apps folder to contain new apps
+
+##[2016-05-25]
+### Fork
+- Forked from https://github.com/pydanny/cookiecutter-django
+### Added
+- Added sqlite backend support
+
 ##[2016-05-22]
 ### Added
 - Added instructions for copying backups from docker to host (@phiberjenz)

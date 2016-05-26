@@ -1,0 +1,40 @@
+###############################################
+# move users app under apps folder
+##############################################
+
+pwd
+/home/managai/workspace/local/test/test
+
+mkdir apps
+mv test/users/ apps/
+
+
+
+/home/managai/workspace/local/test/test/config/settings/common.py
+
+APPS_DIR = ROOT_DIR.path('test')
+#APPS_DIR = ROOT_DIR.path('apps')
+
+# Apps specific for this project go here.
+LOCAL_APPS = (
+    #'test.users',  # custom users app
+    'apps.users',  # custom users app
+
+
+#ACCOUNT_ADAPTER = 'test.users.adapters.AccountAdapter'
+#SOCIALACCOUNT_ADAPTER = 'test.users.adapters.SocialAccountAdapter'
+ACCOUNT_ADAPTER = 'apps.users.adapters.AccountAdapter'
+SOCIALACCOUNT_ADAPTER = 'apps.users.adapters.SocialAccountAdapter'
+
+
+
+
+
+
+
+
+/home/managai/workspace/local/test/test/config/urls.py
+
+    url(r'^users/', include('apps.users.urls', namespace='users')),
+
+#################################################

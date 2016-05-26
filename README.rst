@@ -12,9 +12,11 @@ Cookiecutter Django
 .. image:: https://badges.gitter.im/Join Chat.svg
    :target: https://gitter.im/pydanny/cookiecutter-django?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
-Powered by Cookiecutter_, Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
+Powered by Cookiecutter_, Manax is a framework for jumpstarting production-ready Django projects quickly.
+Forked from cookiecutter-django_ .
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
+.. _cookiecutter-django: https://github.com/pydanny/cookiecutter-django
 
 **Warning**: if you get the error "jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'now'." , please upgrade your cookiecutter version to >= 1.4 (see issue # 528_ )
 
@@ -24,6 +26,7 @@ Features
 ---------
 
 * For Django 1.9
+* Choice between SQLite and PostgreSQL backend
 * Renders Django projects with 100% starting test coverage
 * Twitter Bootstrap_ v4.0.0 - alpha_
 * AngularJS_
@@ -92,7 +95,7 @@ First, get Cookiecutter. Trust me, it's awesome::
 
 Now run it against this repo::
 
-    $ cookiecutter https://github.com/pydanny/cookiecutter-django
+    $ cookiecutter https://github.com/managai/manax
 
 You'll be prompted for some values. Provide them, then a Django project will be created for you.
 
