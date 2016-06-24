@@ -23,6 +23,11 @@
     <link href="{% static 'css/project.css' %}" rel="stylesheet">
     {% endblock %}
 
+    {% block appcss %}
+    <!-- CSS required by app -->
+    <!-- use this section only in app base template -->
+    {% endblock appcss %}   
+
     {% endraw %}{% if cookiecutter.use_angular == "y" %}{% raw %}{% block angular %}
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     {% endblock %}{% endraw %}{% endif %}{% raw %}
