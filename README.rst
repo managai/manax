@@ -65,6 +65,7 @@ Optional Integrations
 .. _django-avatar: https://github.com/jezdez/django-avatar/
 .. _Procfile: https://devcenter.heroku.com/articles/procfile
 .. _Anymail: https://github.com/anymail/django-anymail
+.. _Mailgun: https://mailgun.com/
 .. _Whitenoise: https://whitenoise.readthedocs.io/
 .. _Celery: http://www.celeryproject.org/
 .. _MailHog: https://github.com/mailhog/MailHog

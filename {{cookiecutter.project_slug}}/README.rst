@@ -3,9 +3,9 @@
 
 {{cookiecutter.description}}
 
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
+.. image:: https://img.shields.io/badge/built%20with-Manax-ff69b4.svg
+     :target: https://github.com/managai/manax/
+     :alt: Built with Manax
 
 {% if cookiecutter.open_source_license != "Not open source" %}
 LICENSE: {{cookiecutter.open_source_license}}
