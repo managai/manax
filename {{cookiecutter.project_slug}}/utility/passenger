@@ -1,0 +1,31 @@
+#!/bin/bash  
+
+start() {
+    echo "starting..."
+    mv passenger_wsgi.py.STOP passenger_wsgi.py
+    python passenger_wsgi.py
+    echo "started"
+}
+
+stop() {
+    echo "stopping..."
+    mv passenger_wsgi.py passenger_wsgi.py.STOP
+    rm passenger_wsgi.pyc
+    pkill python
+}
+
+restart() {
+    stop
+    sleep 5
+    start
+}
+
+case "$1" in 
+    start)   start ;;
+    stop)    stop ;;
+    restart) stop; start ;;
+    *) echo "usage: $0 start|stop|restart" >&2
+       exit 1
+       ;;
+esac
+
